@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Collection</title>
+    <link rel="icon" href="media/spinning-disk.gif" />
+    <link href="style1.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <header>
+      <h1>My Music Collection</h1>
+      <p class="subtitle">A curated library of CDs and vinyl records</p>
+    </header>
+
+    <nav>
+      <a href="index.html" class="nav-button active">CD Collection</a>
+      <a href="vinyl.html" class="nav-button">Vinyl Collection</a>
+    </nav>
+
+    <div class="container">
+      <h2 class="page-title">CD Collection</h2>
+
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-number">42</div>
+          <div class="stat-label">Total CDs</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">36</div>
+          <div class="stat-label">Artists</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">1995</div>
+          <div class="stat-label">Earliest Release</div>
+        </div>
+      </div>
+
+      <div class="collection-grid">
+        <!-- CD items -->
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">The Dark Side of the Moon</div>
+            <div class="item-artist">Pink Floyd</div>
+            <div class="item-year">1973</div>
+          </div>
+        </div>
+
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">Thriller</div>
+            <div class="item-artist">Michael Jackson</div>
+            <div class="item-year">1982</div>
+          </div>
+        </div>
+
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">Abbey Road</div>
+            <div class="item-artist">The Beatles</div>
+            <div class="item-year">1969</div>
+          </div>
+        </div>
+
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">Rumours</div>
+            <div class="item-artist">Fleetwood Mac</div>
+            <div class="item-year">1977</div>
+          </div>
+        </div>
+
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">Back in Black</div>
+            <div class="item-artist">AC/DC</div>
+            <div class="item-year">1980</div>
+          </div>
+        </div>
+
+        <div class="collection-item">
+          <div class="item-image cd-image">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="item-details">
+            <div class="item-title">The Joshua Tree</div>
+            <div class="item-artist">U2</div>
+            <div class="item-year">1987</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 My Music Collection | All rights reserved</p>
+    </footer>
+
+    <script>
+      // Simple script to handle navigation highlighting
+      document.addEventListener("DOMContentLoaded", function () {
+        const navButtons = document.querySelectorAll(".nav-button");
+
+        navButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            navButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
