@@ -89,7 +89,8 @@ nav {
 }
 
 .item-image {
-  height: 200px;
+  height: 300px;
+  width: auto;
   background-color: #ecf0f1;
   display: flex;
   align-items: center;
@@ -98,14 +99,17 @@ nav {
   font-size: 3rem;
 }
 
+img {
+  height: 300px;
+  width: auto;
+}
+
 .cd-image {
   background: linear-gradient(135deg, #3f7143, #1c301a);
-  color: white;
 }
 
 .vinyl-image {
   background: linear-gradient(135deg, #e74c3c, #531913);
-  color: white;
 }
 
 .item-details {
